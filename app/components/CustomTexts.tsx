@@ -6,12 +6,12 @@ import { ReactNode } from 'react';
 
 interface TypingTextProps {
   title: string ;
-  textStyles: string;
+  textStyles ?: string;
 }
 
 interface TypingTitleProps {
   title: ReactNode ;
-  textStyles: string;
+  textStyles ?: string;
 }
 
 export const TypingText:React.FC<TypingTextProps> = ({ title, textStyles }) => (

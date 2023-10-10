@@ -1,7 +1,9 @@
 import Navbar from './Navbar'
 import About from './components/About'
 import Explore from './components/Explore'
+import GetStarted from './components/GetStarted'
 import Hero from './components/Hero'
+import WhatsNew from './components/WhatsNew'
 
 export default function Home() {
   return (
@@ -13,17 +15,18 @@ export default function Home() {
       <div className='gradient-03 z-0'/>
       <Explore/>
     </div>
+    <div className='relative'>
+      <GetStarted/>
+      <div className='gradient-04 z-0'/>
+      <WhatsNew/>
+    </div>
    </div>
   )
 }
 
 
 
-{/* <div className='relative'>
-      <GetStarted/>
-      <div className='gradient-04 z-0'/>
-      <WhatsNew/>
-    </div>
+{/* 
     <World/>
     <div className='relative'>
       <Insights/>
