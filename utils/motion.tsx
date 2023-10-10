@@ -24,7 +24,7 @@ interface FadeInProps {
 }
 
 interface PlanetVariantsProps {
-  direction: any
+  direction: string
 }
 
 interface ZoomInProps {
