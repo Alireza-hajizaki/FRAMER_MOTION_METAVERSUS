@@ -2,8 +2,19 @@
 
 import { motion } from 'framer-motion';
 import { textContainer, textVariant2 } from '../../utils/motion';
+import { ReactNode } from 'react';
 
-export const TypingText = ({ title, textStyles }) => (
+interface TypingTextProps {
+  title: string ;
+  textStyles: string;
+}
+
+interface TypingTitleProps {
+  title: ReactNode ;
+  textStyles: string;
+}
+
+export const TypingText:React.FC<TypingTextProps> = ({ title, textStyles }) => (
   <motion.p
     variants={textContainer}
     className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
@@ -16,7 +27,7 @@ export const TypingText = ({ title, textStyles }) => (
   </motion.p>
 );
 
-export const TitleText = ({ title, textStyles }) => (
+export const TitleText:React.FC<TypingTitleProps> = ({ title, textStyles }) => (
   <motion.h2
     variants={textVariant2}
     initial="hidden"

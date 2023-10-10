@@ -17,10 +17,10 @@ interface TextVariantProps {
 }
 
 interface FadeInProps {
-  direction:any
-  type: any
-  delay: any
-  duration: any
+  direction?: string
+  type?: string
+  delay?:number
+  duration?:number
 }
 
 interface PlanetVariantsProps {
@@ -121,7 +121,7 @@ export const textVariant2 = {
   },
 };
 
-export const fadeIn = ({direction, type, delay, duration}:FadeInProps) => ({
+export const fadeIn = ({direction, type, delay, duration}:FadeInProps): Variants => ({
   hidden: {
     x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
     y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
