@@ -1,6 +1,12 @@
-import styles from '../styles';
+import styles from "../styles"
 
-const NewFeatures = ({ imgUrl, title, subtitle }) => (
+interface NewFeaturesProps {
+  imgUrl: string
+  title: string
+  subtitle: string
+}
+
+const NewFeatures:React.FC<NewFeaturesProps> = ({ imgUrl, title, subtitle }) => (
   <div className="flex-1 flex flex-col sm:max-w-[250px] min-w-[210px]">
     <div
       className={`${styles.flexCenter} w-[70px] h-[70px] rounded-[24px] bg-[#323F5D]`}
