@@ -1,14 +1,33 @@
 import Navbar from './Navbar'
 import About from './components/About'
+import Explore from './components/Explore'
 import Hero from './components/Hero'
 
 export default function Home() {
   return (
-   <main>
+   <div className='bg-primary-black overflow-hidden'>
     <Navbar/>
     <Hero/>
-    <div>
+    <div className='relative'>
+      <About/>
+      <div className='gradient-03 z-0'/>
+      <Explore/>
     </div>
-   </main>
+   </div>
   )
 }
+
+
+
+{/* <div className='relative'>
+      <GetStarted/>
+      <div className='gradient-04 z-0'/>
+      <WhatsNew/>
+    </div>
+    <World/>
+    <div className='relative'>
+      <Insights/>
+      <div className='gradient-04 z-0'/>
+      <Feedback/>
+    </div>
+    <Footer/> */}
